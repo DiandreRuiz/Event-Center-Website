@@ -81,47 +81,65 @@ main .headings-container {
     padding-bottom: 100px;
 }
 
-main h1 {
-    font-size: 60px;
+#hero-section h1 {
+    font-size: 70px;
     margin-bottom: 12px;
 }
 
-main h2 {
+#hero-section h2 {
     font-size: 10;
 }
 
 /* About Us */
+
+#aboutUs-section h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 45px;
+}
+
 main #aboutUs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+main #aboutUs-tiles {
     height: var(--section-height);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
     gap: 35px;
+    padding: 0;
+    margin-top: 0;
 }
 
 main #about-photo-container {
     height: 50rem;
-    width: 60rem;
+    width: 30rem;
     background-color: white;
     background-image: url(/assets/aboutUsPhoto.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0;
+    padding: 40px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 main #about-text-container {
     height: 50rem;
     width: 40rem;
-    padding: 20px;
+    padding: 40px;
     background-color: white;
     text-align: center;
     line-height: 40px;
     display: flex;
     flex-direction: column;
-}
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}   
 
 main #about-letter-signatures img {
     height: 10%;
-    width: 10%;
 }
