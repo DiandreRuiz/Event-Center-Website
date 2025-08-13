@@ -99,8 +99,11 @@ main #aboutUs-section {
 
 main #about-photo-container {
     height: 50rem;
-    width: 50rem;
+    width: 60rem;
     background-color: white;
+    background-image: url(/assets/aboutUsPhoto.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 main #about-text-container {
