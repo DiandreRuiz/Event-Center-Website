@@ -55,6 +55,7 @@ body {
 main h1 {
     font-size: 45px;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 /* Hero */
@@ -144,6 +145,10 @@ main #about-text-container {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }   
 
+main #about-letter-signatures {
+    display: inline-block;
+}
+
 main #about-letter-signatures img {
     height: 10%;
 }
@@ -151,7 +156,7 @@ main #about-letter-signatures img {
 /* Featured Events */
 
 main #featuredEvents-section {
-    
+    background-color: var(--background-color);
 }
 
 main #cardGrid-container {
