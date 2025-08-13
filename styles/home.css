@@ -52,6 +52,11 @@ body {
     font-weight: bold;
 }
 
+main h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
 /* Hero */
 main > #hero-section {
     height: var(--section-height);
@@ -95,7 +100,6 @@ main .headings-container {
 #aboutUs-section h1 {
     margin-top: 30px;
     margin-bottom: 0;
-    font-size: 45px;
 }
 
 main #aboutUs-section {
@@ -142,4 +146,25 @@ main #about-text-container {
 
 main #about-letter-signatures img {
     height: 10%;
+}
+
+/* Featured Events */
+
+main #featuredEvents-section {
+    
+}
+
+main #cardGrid-container {
+    background-color: red;;
+    height: var(--section-height);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .event-card {
+    background-color: white;
+    height: 50rem;
+    width: 30rem;
 }
