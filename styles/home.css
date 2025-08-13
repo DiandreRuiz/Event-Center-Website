@@ -12,10 +12,10 @@ body {
     padding: 0;
 }
 
+/* Header & Nav */
 #nav-div {
     display: flex;
-    background-color: grey;
-    width: 100%;
+    background-color: rgb(231, 231, 231);
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -40,5 +40,26 @@ body {
     margin: 0;
 }
 
+/* Main */
+main > #hero-section {
+    height: 60rem;
+    background-image: url(/assets/eventCenterHero.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
+main .headings-container {
+    color: white;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.8) 0%,    /* solid center */
+        rgba(0, 0, 0, 0.8) 50%,   /* keep it solid for half the radius */
+        transparent 100%          /* fade out to nothing at edges */
+    );
+    position: relative;
+    bottom: 80px;
+}
 
