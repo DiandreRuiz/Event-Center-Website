@@ -3,6 +3,8 @@
 
 :root {
     --section-height: 60rem;
+    --background-color: rgb(231, 231, 231);
+    --border-radius: 10px;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
 /* Header & Nav */
 #nav-div {
     display: flex;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--background-color);
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -41,6 +43,10 @@ body {
 }
 
 /*    Main     */
+
+.containers {
+    border-radius: var(--border-radius);
+}
 
 /* Hero */
 main > #hero-section {
@@ -87,8 +93,8 @@ main #aboutUs-section {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    background-color: red;
-    gap: 20px;
+    background-color: var(--background-color);
+    gap: 35px;
 }
 
 main #about-photo-container {
