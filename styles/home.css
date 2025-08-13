@@ -84,4 +84,21 @@ main h2 {
 main #aboutUs-section {
     height: var(--section-height);
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    gap: 20px;
+}
+
+main #about-photo-container {
+    height: 50rem;
+    width: 50rem;
+    background-color: white;
+}
+
+main #about-text-container {
+    height: 50rem;
+    width: 40rem;
+    background-color: white;
 }
