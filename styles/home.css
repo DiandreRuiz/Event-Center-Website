@@ -161,8 +161,8 @@ main #featuredEvents-section {
 }
 
 main #cardGrid-container {
-    background-color: red;;
-    height: var(--section-height);
+    height: 50rem;
+    margin: -20px 0 -20px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -171,6 +171,14 @@ main #cardGrid-container {
 
 main .event-card {
     background-color: white;
-    height: 50rem;
+    height: 40rem;
     width: 30rem;
+    padding: 40px 40px 70px 40px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: var(--border-radius);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
