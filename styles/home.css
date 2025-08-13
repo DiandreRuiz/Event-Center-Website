@@ -1,21 +1,43 @@
+/* External Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    font-family: 
+
 }
 
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 #nav-div {
     display: flex;
-    background-color: red;
+    background-color: grey;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-div > img {
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 10rem;
 }
 
 #nav-div > ul {
+    background-color: none;
+    display: flex;
     list-style: none;
     text-decoration: none;
     color: black;
+    justify-content: flex-start;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
 
