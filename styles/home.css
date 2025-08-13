@@ -117,4 +117,11 @@ main #about-text-container {
     background-color: white;
     text-align: center;
     line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #about-letter-signatures img {
+    height: 10%;
+    width: 10%;
 }
