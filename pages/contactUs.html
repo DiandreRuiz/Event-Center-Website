@@ -22,13 +22,22 @@
     </header>
     <main>
         <!--Featured Events Section-->
-        <section id="featuredEvents-section">
-            <h1>Location</h1>
+        <section id="contact-section">
+            <h1>Contact Us</h1>
+            <h3>Send us an email:</h3>
+            <h2>honeybee@example.com</h2>
             <br>
             <div id="contact-container">
                 <form>
-                    <textarea></textarea>
-                    <button type="Submit"></button>
+                    <label for="name"></label>
+                    <input class="form-input" id="name" placeholder=" Name" required>
+                    <label for="email"></label>
+                    <input class="form-input" type="email" id="email" placeholder=" E-Mail" required>
+                    <label for="phone-number"></label>
+                    <input class="form-input" type="tel" id="phone-number" placeholder=" Phone Number">
+                    <br>
+                    <textarea placeholder="Write your Message here..."></textarea>
+                    <button type="Submit">Submit</button>
                 </form>
             </div>
         </section>

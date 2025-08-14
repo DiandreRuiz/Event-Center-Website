@@ -337,9 +337,40 @@ hr {
     margin-top: 10px;
 }
 
-# 
+#contact-container {
+    display: flex;
+    justify-content: center;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#contact-section {
+    text-align: center;
+}
+
+form textarea {
+    width: 600px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+form button {
+    margin: 30px 0 0 0;
+    width: 200px;
+    height: 50px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 450px;
+}
 
 @media (max-width: 758px) {
     main #about-text-container {
