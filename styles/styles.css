@@ -13,6 +13,12 @@
     --border-radius: 10px;
 }
 
+.section-divider {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 html, body {
     font-family: "Lora";
     display: flex;
@@ -81,7 +87,7 @@ main {
 main h1 {
     font-size: 45px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
@@ -133,6 +139,7 @@ main #aboutUs-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 main #aboutUs-tiles {
@@ -198,12 +205,13 @@ main #about-letter-signatures img {
 main #featuredEvents-section {
     margin-bottom: 0;
     padding-bottom: 0;
+    margin-top: 0;
 }
 
 main #cardGrid-container {
     height: auto;
     margin: 0;
-    padding: 40px 0;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -255,17 +263,26 @@ footer {
     background-color: var(--background-color);
 }
 
+footer img {
+    transition: transform 0.2 ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
 #socials-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 3rem;
     padding: 10px;
+    margin: 0 0 30px 0;
     height: 90px;
 }
 
 footer p {
-    margin: 4px;
+    margin: 4px
 }
 
 .social-icons {
@@ -353,7 +370,8 @@ form {
 }
 
 form textarea {
-    width: 600px;
+    width: 50vw;
+    max-width: 700px;
     height: 300px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -369,13 +387,25 @@ form button {
 form input {
     margin-bottom: 10px;
     height: 30px;
-    width: 450px;
+    width: 50%;
+    max-width: 400px;
 }
 
+@media (max-width: 1232px) {
+    main #about-photo-container {
+        min-height: 30rem;
+    }
+
+}
 @media (max-width: 758px) {
     main #about-text-container {
         width: 70%;
     }
+
+    main #about-photo-container {
+        min-height: 30rem;
+    }
+
     header #nav-div {
         flex-direction: column;
         padding-bottom: 20px;
