@@ -7,12 +7,13 @@
     --border-radius: 10px;
 }
 
-body {
+html,body {
     font-family: "Lora";
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 /* Header & Nav */
@@ -44,18 +45,25 @@ body {
 }
 
 /*    Main     */
+main {
+    background-color: var(--background-color);
+    flex: 1;
+}
 
 .containers {
     border-radius: var(--border-radius);
 }
-.emphasis-text {
+
+#emphasis-text {
     font-weight: bold;
+    text-align: center;
+    text-align-last: center;
 }
 
 main h1 {
     font-size: 45px;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 40px;
     margin-top: 0;
 }
 
@@ -108,11 +116,11 @@ main #aboutUs-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-color);
 }
 
 main #aboutUs-tiles {
-    height: var(--section-height);
+    height: auto;
+    min-height: var(--section-height);
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -131,7 +139,7 @@ main #about-photo-container {
     background-position: center;
     margin: 0;
     padding: 40px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 main #about-text-container {
@@ -143,25 +151,30 @@ main #about-text-container {
     line-height: 40px;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }   
 
 main #about-letter-signatures {
     display: inline-block;
+    height: auto;
+    overflow: hidden;
 }
 
 main #about-letter-signatures img {
-    height: 10%;
+    height: 65%;
+}
+
+#about-letter {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: left;
 }
 
 /* Featured Events */
 
-main #featuredEvents-section {
-    background-color: var(--background-color);
-}
-
 main #cardGrid-container {
-    height: 50rem;
+    height: auto;
     margin: -20px 0 -20px 0;
     display: flex;
     flex-flow: row wrap;
@@ -171,14 +184,45 @@ main #cardGrid-container {
 
 main .event-card {
     background-color: white;
-    height: 40rem;
-    width: 30rem;
+    height: auto;
+    width: 25rem;
     padding: 40px 40px 70px 40px;
     text-align: center;
-    line-height: 40px;
+    line-height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: var(--border-radius);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-text {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#socials-nav {
+    background-color: purple;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons {
+    width: 4rem;
+    margin: 0;
+    padding: 0;
 }
