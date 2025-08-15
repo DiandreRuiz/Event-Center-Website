@@ -53,6 +53,10 @@ html, body {
     justify-content: center;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 #nav-logo {
@@ -91,16 +95,18 @@ header a {
 main {
     background-color: var(--background-color);
     flex: 1;
+    padding-top: 154.5px;
 }
 
 .containers {
     border-radius: var(--border-radius);
 }
 
-#emphasis-text {
+.emphasis-text {
     font-weight: bold;
     text-align: center;
     text-align-last: center;
+    transition: color 1s ease;
 }
 
 main h1 {
@@ -142,6 +148,11 @@ main .headings-container {
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    transition: 1s ease;
+}
+
+main .headings-container {
+    transform: scale(1.05);
 }
 
 #hero-section h1 {
@@ -159,10 +170,8 @@ main .headings-container {
 #hero-section .cursive {
     font-family: "League Script";
     font-size: 80px;
-    transition: color 1.5s ease;
+    transition: color 1s ease;
 }
-
-
 
 #hero-section .cursive:hover, h2:hover {
     color: rgb(204, 174, 5);
@@ -201,6 +210,10 @@ main #aboutUs-tiles {
     margin: 0;
 }
 
+.event-card:hover .emphasis-text {
+    color: rgb(204, 174, 5);
+}
+
 main #about-photo-container {
     min-height: 50rem;
     height: auto;
@@ -211,7 +224,11 @@ main #about-photo-container {
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    margin-top: 0;
+    transition: 1s ease;
+}
+
+main #about-photo-container:hover {
+    transform: scale(1.05);
 }
 
 main #about-text-container {
@@ -227,6 +244,7 @@ main #about-text-container {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
     margin-top: 0;
+    transition: 1s ease;
 }   
 
 main #about-letter-signatures {
@@ -234,6 +252,15 @@ main #about-letter-signatures {
     justify-content: center;
     height: 100px;
     overflow: hidden;
+    transition: 1s ease;
+}
+
+#about-text-container:hover {
+    transform: scale(1.05);
+}
+
+#about-text-container:hover #about-letter-signatures{
+    transform: scale(1.4);
 }
 
 main #about-letter-signatures img {
@@ -281,7 +308,7 @@ main .event-card {
     line-height: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease;
@@ -294,6 +321,7 @@ main .event-card:hover {
 .event-card img {
     width: auto;
     max-width: 350px;
+    border-radius: var(--border-radius);
 }
 
 .card-text {
@@ -423,11 +451,12 @@ form {
 }
 
 form textarea {
+    outline: none;
     width: 50vw;
     max-width: 700px;
     height: 300px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     padding: 30px;
 }
 
@@ -444,6 +473,20 @@ form input {
     max-width: 400px;
 }
 
+#contact-section h2 {
+    transition: color .5s ease;
+}
+
+#email-address {
+    text-decoration: none;
+    color: black;
+}
+
+#contact-container .form-input:focus {
+    outline: none;
+    padding-left: 5px;
+}
+
 @media (max-width: 1232px) {
     main #about-photo-container {
         min-height: 30rem;
@@ -457,6 +500,7 @@ form input {
 
     main #about-photo-container {
         min-height: 30rem;
+        margin-top: 60px;
     }
 
     header #nav-div {
