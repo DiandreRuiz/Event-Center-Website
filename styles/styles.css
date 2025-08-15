@@ -1,5 +1,5 @@
 /* External Imports */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* CSS Reset */
 * {
@@ -108,8 +108,8 @@ main .headings-container {
     background: linear-gradient(
         to bottom,
         transparent 0%,
-        rgba(0, 0, 0, 0.7) 5%,     
-        rgba(0, 0, 0, 0.9) 50%,    
+        rgba(0, 0, 0, 0.7) 10%,     
+        rgba(0, 0, 0, 0.9) 70%,    
         transparent 100%                
     );
     height: 100%;
@@ -118,21 +118,38 @@ main .headings-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 #hero-section h1 {
     font-size: 70px;
+    margin-bottom: 0;
 }
 
 #hero-section h2 {
     font-size: 10;
+    font-weight: 50;
+}
+
+#hero-section .cursive {
+    font-family: "League Script";
+    font-size: 80px;
+}
+
+#hero-section hr {
+    color: grey;
 }
 
 /* About Us */
 
 #aboutUs-section h1 {
     margin-top: 30px;
+}
+
+#aboutUs-section hr {
+    margin-bottom: 0;
 }
 
 main #aboutUs-section {
@@ -164,6 +181,7 @@ main #about-photo-container {
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
 }
 
 main #about-text-container {
@@ -178,7 +196,7 @@ main #about-text-container {
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
-    
+    margin-top: 0;
 }   
 
 main #about-letter-signatures {
@@ -206,6 +224,10 @@ main #featuredEvents-section {
     margin-bottom: 0;
     padding-bottom: 0;
     margin-top: 0;
+}
+
+#featuredEvents-section hr {
+    margin-bottom: 50px;
 }
 
 main #cardGrid-container {
@@ -275,14 +297,14 @@ footer img:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     padding: 10px;
     margin: 0 0 30px 0;
     height: 90px;
 }
 
 footer p {
-    margin: 4px
+    margin: 20px 0 4px 0;
 }
 
 .social-icons {
