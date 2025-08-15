@@ -27,12 +27,27 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     height: 100%;
+    overflow-y: scroll;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ease-in {
+    opacity: 0;
+    animation: fade-in ease 2s forwards;
 }
 
 /* Header & Nav */
 #nav-div {
     display: flex;
-    background-color: var(--background-color);
+    background: linear-gradient(to bottom, rgba(169, 169, 169, 0.821), var(--background-color));
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -42,7 +57,7 @@ html, body {
 #nav-logo {
     margin: 0 10px 0 0;
     padding: 0;
-    width: 200px;
+    width: 150px;
 }
 
 #nav-div > ul {
@@ -67,10 +82,13 @@ header .nav-link:hover {
     transform: scale(1.3);
 }
 
+header a {
+    padding: 0;
+}
+
 /*    Main     */
 main {
     background-color: var(--background-color);
-    height: auto;
     flex: 1;
 }
 
@@ -88,7 +106,7 @@ main h1 {
     font-size: 45px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 /* Hero */
@@ -121,6 +139,8 @@ main .headings-container {
     align-items: center;
     padding-bottom: 100px;
     padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #hero-section h1 {
@@ -438,4 +458,8 @@ form input {
     #hero-section h2 {
         font-size: 20px;
     }
+    #hero-section .cursive {
+        display: block;
+    }
+    
 }
