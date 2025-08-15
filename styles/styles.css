@@ -534,6 +534,7 @@ form input {
     }
     #hero-section h2 {
         font-size: 20px;
+        padding-bottom: 50px;
     }
     #hero-section .cursive {
         display: block;
