@@ -30,6 +30,7 @@ html, body {
     overflow-y: scroll;
 }
 
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -151,11 +152,20 @@ main .headings-container {
 #hero-section h2 {
     font-size: 10;
     font-weight: 50;
+    margin-bottom: 40px;
+    transition: color 1.5s ease;
 }
 
 #hero-section .cursive {
     font-family: "League Script";
     font-size: 80px;
+    transition: color 1.5s ease;
+}
+
+
+
+#hero-section .cursive:hover, h2:hover {
+    color: rgb(204, 174, 5);
 }
 
 #hero-section hr {
